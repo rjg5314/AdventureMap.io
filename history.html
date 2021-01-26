@@ -1,57 +1,255 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/tailwind.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/jquery-3.3.1.js"></script>
-
-    <script src="https://use.fontawesome.com/f92d7d718d.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <title>Adventure Map 2</title>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="css/tailwind.css">
+   <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="css/history.css">
+   <script src="js/jquery-3.3.1.js"></script>
+   <script src="https://use.fontawesome.com/f92d7d718d.js"></script>
+   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+   <title>Adventure Map 2</title>
 </head>
 <body>
-    <!-- This example requires Tailwind CSS v2.0+ -->
-    <div>
-    <nav class="bg-gray-800">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16">
-          <div class="flex items-center">
-            <div class="flex-shrink-0">
-              <img class="h-8 w-8" src="img/dirt_block.jpg" alt="Workflow">
+   <div>
+      <nav class="bg-gray-800">
+         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+               <div class="flex items-center">
+                  <div class="flex-shrink-0">
+                     <img class="h-8 w-8" src="img/dirt_block.jpg" alt="Workflow">
+                  </div>
+                  <div class="hidden md:block">
+                     <div class="ml-10 flex items-baseline space-x-4">
+                        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                        <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="characters.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Characters</a>
+                        <a href="history.html" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">History</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="-mr-2 flex md:hidden">
+               </div>
             </div>
-            <div class="hidden md:block">
-              <div class="ml-10 flex items-baseline space-x-4">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
-  
-                <a href="characters.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Characters</a>
-  
-                <a href="history.html" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">History</a>
+         </div>
+      </nav>
+      <div class="tab">
+        <button id="map_1_tab">Adventure Map 1</button>
+        <button id="map_2_tab">Adventure Map 2</button>
+    </div>
+      <header class="bg-white shadow">
+         <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+            <h1 class="text-3xl font-bold leading-tight text-gray-900">History</h1>
+         </div>
+      </header>
+      <main>
+         <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+            <!-- Replace with your content -->
+
+            <div class="container">
+               <div class="box map_1">
+                  <div class="img-box"  title="Episode 1: Adventure"
+                     ><img src="img/episodes/am1_ep1.jpg" alt=""></div>
+                  <div class="content">
+                     <h2>Episode 1: Adventure</h2>
+                     <p> Description </p>
+                     <button class="ghost-btn">More</button>
+                  </div>
+               </div>
+              <div class="box map_1">
+                <div class="img-box"  title="Episode 2: Into the Void"
+                   ><img src="img/episodes/am1_ep2.jpg" alt=""></div>
+                <div class="content">
+                   <h2>Episode 2: Into the Void</h2>
+                   <p> Description </p>
+                   <button class="ghost-btn">More</button>
+                </div>
+             </div>
+            <div class="box map_1">
+              <div class="img-box"  title="Episode 3: Prison Break"
+                 ><img src="img/episodes/am1_ep3.jpg" alt=""></div>
+              <div class="content">
+                 <h2>Episode 3: Prison Break</h2>
+                 <p> Description </p>
+                 <button class="ghost-btn">More</button>
               </div>
+           </div>
+
+           <div class="box map_1">
+            <div class="img-box"  title="Episode 4: Elf Town"
+               ><img src="img/episodes/am1_ep4.jpg" alt=""></div>
+            <div class="content">
+               <h2>Episode 4: Elf Town</h2>
+               <p> Description </p>
+               <button class="ghost-btn">More</button>
             </div>
+         </div>
+
+         <div class="box map_1">
+          <div class="img-box"  title="Episode 5: Homebound"
+             ><img src="img/episodes/am1_ep5.jpg" alt=""></div>
+          <div class="content">
+             <h2>Episode 5: Homebound</h2>
+             <p> Description </p>
+             <button class="ghost-btn">More</button>
           </div>
-          <div class="-mr-2 flex md:hidden">
-          </div>
+       </div>
+
+      <div class="box map_1">
+        <div class="img-box"  title="Episode 6: Shipwrecked"
+           ><img src="img/episodes/am1_ep6.jpg" alt=""></div>
+        <div class="content">
+           <h2>Episode 6: Shipwrecked</h2>
+           <p> Description </p>
+           <button class="ghost-btn">More</button>
         </div>
       </div>
-    </nav>
-  
-    <header class="bg-white shadow">
-      <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-        <h1 class="text-3xl font-bold leading-tight text-gray-900">
-          History
-        </h1>
-      </div>
-    </header>
-    <main>
-      <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-        <!-- Replace with your content -->
-        <div class="px-4 py-6 sm:px-0">
-          <div class="border-4 border-dashed border-gray-200 rounded-lg h-96"></div>
+
+        <div class="box map_1">
+        <div class="img-box"  title="Episode 7: Mid Summer City"
+            ><img src="img/episodes/am1_ep7.jpg" alt=""></div>
+        <div class="content">
+            <h2>Episode 7: Mid Summer City</h2>
+            <p> Description </p>
+            <button class="ghost-btn">More</button>
         </div>
-        <!-- /End replace -->
       </div>
-    </main>
-  </div>
+
+      <div class="box map_1">
+      <div class="img-box"  title="Episode 8: King's Justice"
+          ><img src="img/episodes/am1_ep8.jpg" alt=""></div>
+      <div class="content">
+          <h2>Episode 8: King's Justice</h2>
+          <p> Description </p>
+          <button class="ghost-btn">More</button>
+      </div>
+      </div>
+
+      <div class="box map_1">
+      <div class="img-box"  title="Episode 9: Agar"
+        ><img src="img/episodes/am1_ep9.jpg" alt=""></div>
+      <div class="content">
+        <h2>Episode 9: Agar</h2>
+        <p> Description </p>
+        <button class="ghost-btn">More</button>
+      </div>
+      </div>
+
+      <div class="box map_1">
+      <div class="img-box"  title="Episode 10: Beneath the Crust"
+        ><img src="img/episodes/am1_ep10.png" alt=""></div>
+      <div class="content">
+        <h2>Episode 10: Beneath the Crust</h2>
+        <p> Description </p>
+        <button class="ghost-btn">More</button>
+      </div>
+      </div>
+
+      <div class="box map_1">
+      <div class="img-box"  title="Episode 11: Beyond the Sky"
+        ><img src="img/episodes/am1_ep11.jpg" alt=""></div>
+      <div class="content">
+        <h2>Episode 11: Beyond the Sky</h2>
+        <p> Description </p>
+        <button class="ghost-btn">More</button>
+      </div>
+      </div>
+
+      <div class="box map_1">
+      <div class="img-box"  title="Episode 12: Dark Days Ahead"
+        ><img src="img/episodes/am1_ep12.jpg" alt=""></div>
+      <div class="content">
+        <h2>Episode 12: Dark Days Ahead</h2>
+        <p> Description </p>
+        <button class="ghost-btn">More</button>
+      </div>
+      </div>
+
+      <div class="box map_1">
+      <div class="img-box"  title="Episode 13: Race to the End"
+        ><img src="img/episodes/am1_ep13.jpg" alt=""></div>
+      <div class="content">
+        <h2>Episode 13: Race to the End</h2>
+        <p> Description </p>
+        <button class="ghost-btn">More</button>
+      </div>
+      </div>
+
+      <div class="box map_1">
+      <div class="img-box"  title="Episode 14: Final Flash"
+        ><img src="img/episodes/am1_ep14.png" alt=""></div>
+      <div class="content">
+        <h2>Episode 14: Final Flash</h2>
+        <p> Description </p>
+        <button class="ghost-btn">More</button>
+      </div>
+      </div>
+
+      <div class="box map_1">
+      <div class="img-box"  title="Episode 15: The End"
+        ><img src="img/episodes/am1_ep15.png" alt=""></div>
+      <div class="content">
+        <h2>Episode 15: The End</h2>
+        <p> Description </p>
+        <button class="ghost-btn">More</button>
+      </div>
+      </div>
+
+      <div class="box map_2">
+        <div class="img-box"  title="Episode 0: The True End"
+          ><img src="https://source.unsplash.com/featured/?lady, fox" alt=""></div>
+        <div class="content">
+          <h2>Episode 0: The True End</h2>
+          <p> Description </p>
+          <button class="ghost-btn">More</button>
+        </div>
+      </div>
+
+      <div class="box map_2">
+        <div class="img-box"  title="Episode 1: Brave New World"
+          ><img src="https://source.unsplash.com/featured/?lady, fox" alt=""></div>
+        <div class="content">
+          <h2>Episode 1: Brave New World</h2>
+          <p> Description </p>
+          <button class="ghost-btn">More</button>
+        </div>
+      </div>
+
+      <div class="box map_2">
+        <div class="img-box"  title="Episode 2: Eclipse"
+          ><img src="https://source.unsplash.com/featured/?lady, fox" alt=""></div>
+        <div class="content">
+          <h2>Episode 2: Eclipse</h2>
+          <p> Description </p>
+          <button class="ghost-btn">More</button>
+        </div>
+      </div>
+
+
+
+    </div>
+            <!-- /End replace -->
+         </div>
+      </main>
+   </div>
 </body>
 </html>
+
+<script>
+  $(document).ready(function(){
+    $(".map_1").show();
+      $(".map_2").hide();
+
+  $("#map_1_tab").click(function(){
+      $(".map_1").show();
+      $(".map_2").hide();
+  });
+
+  $("#map_2_tab").click(function(){
+      $(".map_2").show();
+      $(".map_1").hide();
+  });
+
+
+
+  });
+</script>
